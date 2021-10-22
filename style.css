@@ -293,5 +293,25 @@ p {
     border: 1px solid #e8ecee;
 
     margin-right: 4px;
+
+    background-color: #fff;
+    transition: background-color .1s linear;
+
+}
+.social_item:hover {
+    background-color: #e8ecee;
+}
+
+.social_item:hover .social_icon {
+
+    fill: #000;
+    transition: color .1s linear;
+}
+
+.social_icon {
+    fill: #c6cacc;
+    display: block;
+    height: 18px;
+;
 }
 
