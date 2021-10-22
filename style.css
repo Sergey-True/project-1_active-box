@@ -8,16 +8,21 @@ body {
 
 }
 
+*,
+*:before, *:after {
+    box-sizing: border-box}
+
 h1, h2, h3, h4, h5, h6 {
     margin:0;
     }
 p {
-    margin: 0 0 10px 0;
+    margin: 0 0 10px;
 }
 /**********  Container **********/
 .container {
     width: 100%;
-    max-width: 1170px;
+    max-width: 1200px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 /**********  Header **********/
@@ -131,7 +136,7 @@ p {
 }
 
 .features_item {
-    width: 27%;
+    width: 33%;
     text-align: center;
     padding: 0 30px;
     margin: 25px 0;
@@ -167,7 +172,7 @@ p {
 .works_item {
 
 
-    width: 24.9%;
+    width: 25%;
     height: 350px;
     position: relative;
     overflow: hidden;
@@ -224,10 +229,69 @@ p {
     color: #fff;
 }
 
+/**********  Team **********/
 
+.team {
+    margin: 100px 0 70px;
+}
 
+.team_inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
 
+.team-item {
+    width: 25%;
+    padding: 0 15px;
+    margin-bottom: 30px;
 
+}
 
+.team-photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
 
+    margin-bottom: 20px;
+}
+
+.team_name {
+    font-size: 22px;
+    color: #2d3033;
+    margin-bottom: 8px;
+
+}
+
+.team_prof {
+    font-size: 13px;
+    color: #e84545;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+
+    margin-bottom: 15px;
+}
+
+.team_text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #6c7279;
+    margin-bottom: 20px;
+}
+
+/**********  Social Buttons **********/
+
+.team_social {
+    display: flex;
+}
+.social_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e8ecee;
+
+    margin-right: 4px;
+}
 
