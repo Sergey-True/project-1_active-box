@@ -118,6 +118,8 @@ p {
     padding: 14px 40px;
     border-radius: 3px;
     transition: .1s linear;
+
+    text-align: center;
 }
 
 .btn--red {
@@ -283,7 +285,27 @@ p {
 
 .team_social {
     display: flex;
+    }
+
+.social_footer {
+    justify-content: center;
 }
+
+.social_footer .social_item {
+    background: transparent ;
+    border-width: 2px;
+    border-color: #fff;
+    border-radius: 2px;
+}
+
+.social_footer .social_icon {
+    color: #fff;
+}
+
+.social_footer .social_item:hover {
+    background-color: #fff;
+}
+
 .social_item {
     display: flex;
     justify-content: center;
@@ -374,4 +396,92 @@ p {
 
 .testimonials_photo {
 
+}
+
+/**********  Download **********/
+
+.download {
+     margin: 90px 0;
+    text-align: center;
+}
+
+.download_title {
+    font-weight: 300;
+    font-size: 28px;
+    color: #2d3033;
+
+    margin-bottom: 10px;
+}
+
+.download_text {
+    font-weight: 700;
+    font-size: 13px;
+    color: #2d3033;
+    text-transform: uppercase;
+
+    margin-bottom: 30px;
+}
+
+.btn--long {
+    min-width: 280px;
+}
+
+/********** Footer **********/
+
+.footer {
+
+    background-color: #3a3e64;
+
+}
+
+.footer_inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 70px 0;
+
+}
+
+.footer_item {
+    width: 33.33333% ;
+    text-align: center;
+    padding: 0 15px;
+
+}
+.footer-title {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+
+    margin-bottom: 10px;
+
+}
+
+.footer-address {
+    color: rgba(255,255,255,.5);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.5 ;
+}
+
+.footer-text {
+    color: rgba(255,255,255,.5);
+     font-size: 14px;
+    line-height: 1.5 ;
+}
+/********** Copyright **********/
+.copyright {
+    background-color: #313454;
+    padding: 20px 0;
+}
+.copyright_text {
+    text-align: center;
+    font-size: 14px;
+    color: #808080;
+    line-height: 1.5;
+;
+}
+
+.copyright_text span {
+    color: #fff;
 }
