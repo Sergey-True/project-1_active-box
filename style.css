@@ -315,3 +315,63 @@ p {
 ;
 }
 
+/**********  Testimonials **********/
+.testimonials {
+    overflow: hidden;
+    background-color: #53354a;
+}
+
+.testimonials_item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.testimonials_photo {
+    width: 50% ;
+    height: 500px;
+    position: relative;
+}
+
+.testimonials_img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    transform: translateY(-50%);
+}
+
+.testimonials_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    background-color: #53354a;
+    padding-left: 80px;
+}
+
+.testimonials_content {
+
+}
+
+.testimonials_text {
+    font-family: "Cardo",sans-serif;
+    font-size: 36px;
+    font-style: italic;
+    color: #fff;
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+
+}
+
+.testimonials_author {
+     font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+
+}
+
+.testimonials_photo {
+
+}
