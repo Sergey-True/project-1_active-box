@@ -1,25 +1,39 @@
 
 $(function() {
+
+    /*Fixed header*/
     let header = $("#header");
     let intro = $("#intro");
     let scrollPos = $(window).scrollTop();
-
-
-
+    let introH = intro.innerHeight();
+    checkScroll (scrollPos, introH);
 
     $(window).on("scroll load resize", function () {
         let introH = intro.innerHeight();
         scrollPos = $(this).scrollTop();
+        checkScroll (scrollPos, introH);
+    });
 
+function checkScroll (scrollPos, introH) {
         if( scrollPos >introH) {
             header.addClass("fixed");
         } else {
             header.removeClass("fixed");
         }
-        console.log(scrollPos);
-
-    });
+}
 
 
+
+        /*Smooth scroll*/
+
+        $("[data-scroll]").on("click", function (event) {event.preventDefault();
+        let elementID = $(this).data('scroll');
+        let elementOffset = $(elementID).offset().top;
+
+
+            $("html, body").animate({
+                scrollTop:elementOffset - 65
+            }, 700);
+        });
 
 });
