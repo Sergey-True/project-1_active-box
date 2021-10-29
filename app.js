@@ -6,6 +6,9 @@ $(function() {
     let intro = $("#intro");
     let scrollPos = $(window).scrollTop();
     let introH = intro.innerHeight();
+
+    let nav = $("#nav");
+    let navToggle = $("#navToggle");
     checkScroll (scrollPos, introH);
 
     $(window).on("scroll load resize", function () {
@@ -26,14 +29,27 @@ function checkScroll (scrollPos, introH) {
 
         /*Smooth scroll*/
 
-        $("[data-scroll]").on("click", function (event) {event.preventDefault();
+        $("[data-scroll]").on("click", function (event) {
+            event.preventDefault();
         let elementID = $(this).data('scroll');
         let elementOffset = $(elementID).offset().top;
+
+        nav.removeClass("show");
 
 
             $("html, body").animate({
                 scrollTop:elementOffset - 65
             }, 700);
         });
+
+    /*Nav Toggle*/
+
+
+
+   navToggle.on("click", function (event){
+        event.preventDefault();
+        nav.toggleClass("show");
+
+    });
 
 });
