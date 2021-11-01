@@ -355,9 +355,65 @@ p {
     background-color: #53354a;
 }
 
+.testimonial_slider {
+    height: 500px;
+    overflow: hidden;
+}
+
+.testimonial_slider.slick-initialized {
+    height: auto;
+}
+
 .testimonials_item {
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.slick-dots {
+    margin: 0;
+    padding: 0 10px 10px;
+    list-style: none;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.slick-dots li {
+    margin: 0 5px;
+}
+
+.slick-dots button {
+    background: none;
+    border: 0;
+    padding: 0;
+    font-size: 0;
+    color: transparent;
+
+    border-radius: 50%;
+    background: #fff;
+
+    width: 20px;
+    height: 20px;
+
+    opacity: .5;
+
+    cursor: pointer;
+}
+.slick-dots .slick-active button {
+    opacity: 1;
+}
+
+.slick-dots button:focus {
+    outline: 0;
+
 }
 
 .testimonials_photo {
