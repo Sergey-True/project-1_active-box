@@ -52,4 +52,16 @@ function checkScroll (scrollPos, introH) {
 
     });
 
+    /*Testimonials https://kenwheeler.github.io/slick/*/
+
+    let slider = $("#testimonialslider");
+    slider.slick({
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: false,
+        arrows: false,
+        dots: true,
+    });
+
 });
